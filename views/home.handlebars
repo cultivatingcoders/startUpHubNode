@@ -2,12 +2,14 @@
   <!-- Button to open the modal login form -->
 <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
+<hr>
+<div class="container">
+  <h1> ABQ Startup Hub </h1>
+</div>
+
 <!--              -->
 <div class="container">
-      <a class="textarea">
-      </a>
-
-  </div>
+  <div class="img" src="lib/images/startUpLogo3.png">
 
 <!-- The Modal -->
 <div id="id01" class="modal">
@@ -35,21 +37,24 @@
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#">password?</a></span>
 
+
+<hr>
+<table style="width: 50%">
+  <tr>
       <div class="container">
         <label><b>First Name</b></label>
         <input type="text" placeholder="First Name" name="uname" required>
-
+      <br>
         <label><b>Last Name</b></label>
         <input type="text" placeholder="Last Name" name="uname" required>
-      </div>
-
+      <tr><br>
         <div class="container">
           <label><b>Business Name</b></label>
           <input type="text" placeholder="Business Name" name="uname" required>
-
+        
           <label><b>EIN Number</b></label>
           <input type="text" placeholder="EIN Number" name="uname" required>
-        </div>
+
 
         <div class="container">
           <label><b>Email</b></label>
@@ -61,6 +66,8 @@
           <label><b>Confirm Password</b></label>
           <input type="text" placeholder="Confirm Password" name="uname" required>
         </div>
+      </th>
+    </tr>
         <button type="submit">Register</button>
 
     </div>

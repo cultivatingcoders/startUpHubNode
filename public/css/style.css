@@ -1,17 +1,37 @@
-
-
 .jumbotron {
     background: url("../images/startUp3.jpg") no-repeat center center;
     background-size: cover;
     text-align: center;
     background-position: 10% 10%;
-    height: 680px;
+    height: 770px;
     color: red;
     font-size: 1.5em;
 }
 
+h1 {
+  font-size: 3.5em !important;
+  font-family: 'Titillium Web';
+  font-weight: bolder;
+  text-align: center;
+  color: red;
+}
+
+.img {
+    background: url("../images/startUpLogo3.png") no-repeat center center;
+  /*  opacity: 0.5 !important;
+    filter: alpha(opacity=50);    For IE8 and earlier */
+    margin: 100px auto;
+    background-position: 10% 10%;
+    height: 500px;
+    width: 500px;
+}
+
 html { display: flex;}
 body {width: 100%;}
+
+table {
+  align-content: center;
+}
 
 /* This controls the logo in the login box */
 .avatar {
@@ -38,7 +58,7 @@ body {width: 100%;}
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: transparent;
+    background-color: black;
     margin: 5px auto; /* 15% from the top and centered */
     border: 1px solid white;
     width: 80%; /* Could be more or less, depending on screen size */
