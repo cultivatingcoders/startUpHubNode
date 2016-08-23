@@ -1,12 +1,12 @@
 
 
 .jumbotron {
-    background: url("/images/startUp3.jpg") no-repeat center center;
+    background: url("../images/startUp3.jpg") no-repeat center center;
     background-size: cover;
     text-align: center;
     background-position: 10% 10%;
     height: 680px;
-    color: white;
+    color: red;
     font-size: 1.5em;
 }
 
@@ -38,7 +38,7 @@ body {width: 100%;}
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: black;
+    background-color: transparent;
     margin: 5px auto; /* 15% from the top and centered */
     border: 1px solid white;
     width: 80%; /* Could be more or less, depending on screen size */
