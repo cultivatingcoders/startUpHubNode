@@ -89,6 +89,10 @@ app.get('/signup', function(req, res) {
   res.render('signup', {title: "Create an Account"});
 });
 
+app.get('/profile', function(req, res) {
+  res.render('profile')
+});
+
 app.post('/signup', function(req, res) {
 
   const hash = bcrypt.hashSync(req.body.password);
