@@ -1,0 +1,18 @@
+/* This controls my background image. */
+body {
+  background: url("../images/startUp3.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 10% 10%;
+  position: relative;
+}
+
+.box {
+  position: left;
+}
+
+header {
+  text-align: left;
+  font-size: 50px;
+  font-family: 'Ubuntu';
+  color: red;
+}
