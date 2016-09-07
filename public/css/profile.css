@@ -6,10 +6,18 @@ body {
   position: relative;
 }
 
+.logo {
+  margin-left: left;
+}
+
 h1 {
   text-align: left;
   text-decoration: underline;
   font-size: 50px;
   font-family: 'Ubuntu';
   color: red;
+}
+
+.checklist {
+  font-family: 'Titillium Web'
 }
