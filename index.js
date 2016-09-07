@@ -15,7 +15,7 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
 // Setup database
-const sequelize = new Sequelize('startupUsers', 'root', 'astrophotos666');
+const sequelize = new Sequelize('startupUsers', 'root', 'coder');
 
 // Model for keeping track of user accounts.
 const User = sequelize.define('user', {
