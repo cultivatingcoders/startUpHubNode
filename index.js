@@ -84,6 +84,27 @@ app.get('/', function (req, res) {
   res.render('home');
 });
 
+app.get('/landing', function(req, res) {
+
+  // Just gonna use some dummy data first
+  var startups = [
+    {
+      name: "Business Toybox",
+      logo: "/images/toybox.png",
+      facebook: "https://www.facebook.com/businesstoybox/",
+      twitter: "https://twitter.com/BusinessToybox",
+      check: true,
+      phone: "575-914-1826",
+      email: "bjorkbat@gmail.com"
+    }
+  ];
+
+  res.render('landing', {
+    stylesheets: [{name: 'landing.css'}],
+    startups: startups
+  });
+});
+
 // This function handles requests to the signup page
 app.get('/signup', function(req, res) {
   res.render('signup', {title: "Create an Account"});

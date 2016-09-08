@@ -1,0 +1,56 @@
+html, body {
+  background-color: #FFF;
+  position: relative;
+  height: 100%;
+}
+
+.landingmovie {
+  width: 100%;
+  min-height: 100%;
+}
+
+.foreground {
+  position: absolute;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  padding-top: 200px;
+  color: #FAFAFA;
+}
+
+.foreground h1 {
+  color: #FCFCFC;
+}
+
+.foreground .social {
+  margin-top: 100px;
+}
+
+.foreground .social a {
+  color: white;
+  margin: 10px;
+}
+
+.container {
+  max-width: none;
+}
+
+.startup {
+  padding: 20px;
+}
+
+.startup img {
+  max-width: 250px;
+  margin: 0px auto;
+  border: 1px solid #CCC;
+  border-radius: 100%;
+  box-shadow: 0px 4px 4px #777;
+}
+
+.startup .social {
+  margin:10px;
+}
+
+.startup .social a {
+  margin: 5px;
+}

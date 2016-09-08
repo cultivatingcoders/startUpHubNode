@@ -22,6 +22,10 @@
      <link rel="stylesheet" href="/css/style.css">
      <link rel="short icon" href="/images/startUpLogo3.ico"/>
 
+     {{#each stylesheets}}
+        <link rel="stylesheet" href="/css/{{name}}">
+     {{/each}}
+
   </head>
   <body>
 

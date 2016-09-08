@@ -1,0 +1,90 @@
+
+<video class="landingmovie" src="/video/background.mov" type="video/mov"
+  playsinline autoplay muted loop>
+</video>
+
+<div class="foreground text-center">
+  <h1>Albuquerque Startup Hub</h1>
+  <p class="lead">Iceland brunch small batch, waistcoat street art tilde gentrify edison bulb artisan</p>
+
+  <div class="social text-center">
+    <a href="#facebook"><i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i></a>
+    <a href="#facebook"><i class="fa fa-3x fa-snapchat" aria-hidden="true"></i></a>
+    <a href="#facebook"><i class="fa fa-3x fa-twitter-square" aria-hidden="true"></i></a>
+    <a href="#facebook"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+  {{#each startups}}
+    <div class="col-md-4 col-sm-6">
+
+      <div class="startup text-center">
+
+        <img class="img-responsive img-circle" src="{{logo}}" />
+        <h2>{{name}}</h3>
+
+        <div class="social">
+
+          {{#if facebook}}
+            <a href="{{facebook}}">
+              <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+            </a>
+          {{/if}}
+
+          {{#if twitter}}
+          <a href="{{twitter}}">
+            <i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i>
+          </a>
+          {{/if}}
+
+          {{#if instagram}}
+            <a href="{{instagram}}">
+              <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+            </a>
+          {{/if}}
+
+          {{#if angellist}}
+            <a href="{{angellist}}">
+              <i class="fa fa-2x fa-angellist" aria-hidden="true"></i>
+            </a>
+          {{/if}}
+
+        </div>
+
+        <div class="social">
+
+          {{#if check}}
+            <a href="#">
+              <i class="fa fa-2x fa-check-square"></i>
+            </a>
+          {{/if}}
+
+          {{#if email}}
+            <a href="mailto:{{email}}">
+              <i class="fa fa-2x fa-envelope"></i>
+            </a>
+          {{/if}}
+
+          {{#if phone}}
+            <a href="tel:{{phone}}">
+              <i class="fa fa-2x fa-phone"></i>
+            </a>
+          {{/if}}
+
+          {{#if location}}
+            <a href="#">
+              <i class="fa fa-2x fa-map-marker"></i>
+            </a>
+          {{/if}}
+
+        </div>
+
+      </div>
+
+    </div>
+  {{/each}}
+  </div>
+</div>
