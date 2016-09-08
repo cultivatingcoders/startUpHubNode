@@ -3,14 +3,60 @@
 
   <div class="row">
     <div class="col-sm-6">
+
       <div class="row">
-        <div class="col-sm-4">
-          <img src="/images/startUpLogo3.png"/>
+        <div class="col-sm-2">
+          <img class="img-responsive" src="/images/startUpLogo3.png"/>
         </div>
         <div class="col-sm-8">
           <h1>Profile</h1>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-sm-2">
+          <img class="img-responsive" src="/images/cclogo.png"/>
+        </div>
+        <div class="col-sm-10">
+          <address>
+            <strong>Cultivating Coders</strong><br>
+            1309 4th St SW<br>
+            Albuquerque, NM 87102<br>
+            <abbr title="Phone">P:</abbr> (123) 555-1234
+          </address>
+        </div>
+
+      </div>
+      <div class="social">
+
+        {{#if facebook}}
+          <a href="{{facebook}}">
+            <i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i>
+          </a>
+        {{/if}}
+
+        {{#if twitter}}
+        <a href="{{twitter}}">
+          <i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i>
+        </a>
+        {{/if}}
+
+        {{#if instagram}}
+          <a href="{{instagram}}">
+            <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+          </a>
+        {{/if}}
+
+        {{#if angellist}}
+          <a href="{{angellist}}">
+            <i class="fa fa-2x fa-angellist" aria-hidden="true"></i>
+          </a>
+        {{/if}}
+
+      </div>
+      <p>
+        The Cultivating Coders bootcamp is an 8 week intensive training in web application development. Students will learn a variety of sought after programming languages including the M.E.A.N. Development stack. This includes Node.js, Express and other languages that are highly sought in the job market.
+      </p>
     </div>
 
 
