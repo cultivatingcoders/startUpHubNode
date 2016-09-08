@@ -1,0 +1,23 @@
+/* This controls my background image. */
+body {
+  background: url("../images/startUp3.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 10% 10%;
+  position: relative;
+}
+
+img {
+    position: absolute;
+    padding-top: 350px;
+    padding-left: 350px;
+    opacity: 0.5;
+    left: 200px;
+    top: 20px;
+    z-index: -1;
+}
+
+label {
+  font-size: 15px;
+  font-family: 'Titillium Web';
+  color: #4DE806;
+}
