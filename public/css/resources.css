@@ -1,0 +1,15 @@
+p {
+  color: black;
+}
+und-colo url("../Start-up Sign Mock-up.png");button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color: blue;
+}
+.panel-title>.small, .panel-title>.small>a, .panel-title>a, .panel-title>small, .panel-title>small>a{
+  color: green;
+}
+ #accordion a:hover {
+  background-color: antiquewhite;
+  color: red
+}
+body {
+  background-image: url("../Start-up Sign Mock-up.png");
+}
