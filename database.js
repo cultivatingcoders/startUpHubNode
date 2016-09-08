@@ -18,7 +18,7 @@ const User = db.define('user', {
   hash: sequelize.STRING(128),
   github: sequelize.STRING,
   instagram: sequelize.STRING,
-  linkedin: sequelize.STRING,
+  linkedIn: sequelize.STRING,
   salt: sequelize.STRING(64),
   snapChat: sequelize.STRING,
   twitter: sequelize.STRING,

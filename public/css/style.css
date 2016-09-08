@@ -4,7 +4,7 @@
     text-align: center;
     background-position: 10% 10%;
     height: 770px;
-    color: red;
+    color: #4DE806;
     font-size: 1.5em;
 }
 
@@ -14,7 +14,7 @@ h1 {
   font-family: 'Titillium Web';
   font-weight: bolder;
   text-align: center;
-  color: red;
+  color: #4DE806;
 }
 
 html { display: flex;}
@@ -120,7 +120,7 @@ body {
   background: -moz-linear-gradient(right, #76b852, #8DC26F);
   background: -o-linear-gradient(right, #76b852, #8DC26F);
   background: linear-gradient(to left, #76b852, #8DC26F);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Ubuntu';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
