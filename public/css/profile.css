@@ -6,6 +6,10 @@ body {
   position: relative;
 }
 
+.container {
+  max-width: none;
+}
+
 h1 {
   text-align: left;
   text-decoration: underline;
