@@ -6,7 +6,6 @@ body {
   position: relative;
 }
 
-
 h1 {
   text-align: left;
   text-decoration: underline;
@@ -25,4 +24,13 @@ li {
   font-family: 'Titillium Web' !important;
   font-size: 35px !important;
   color: #4DE806 !important;
+}
+
+.box {
+  border: 2.5px solid white;
+  width: 500px;
+  height: 400px;
+  font-size: 20px;
+  font-family: 'Titillium Web';
+  color: #4DE806;
 }
