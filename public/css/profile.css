@@ -6,13 +6,31 @@ body {
   position: relative;
 }
 
-.box {
-  position: left;
-}
-
-header {
+h1 {
   text-align: left;
+  text-decoration: underline;
   font-size: 50px;
   font-family: 'Ubuntu';
-  color: red;
+  color: #4DE806;
+}
+
+.checklist {
+  border: 2.5px solid white;
+  width: 400px;
+  height: 200px;
+}
+
+li {
+  font-family: 'Titillium Web' !important;
+  font-size: 35px !important;
+  color: #4DE806 !important;
+}
+
+.box {
+  border: 2.5px solid white;
+  width: 500px;
+  height: 400px;
+  font-size: 20px;
+  font-family: 'Titillium Web';
+  color: #4DE806;
 }

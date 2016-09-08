@@ -1,4 +1,9 @@
+<link rel="stylesheet" href="css/signup.css">
+
 <h1>{{ title }}</h1>
+
+<!-- This calls the background-image. -->
+<div class="container" id="startUp3.jpg"></div>
 
 <form method="POST" class="narrow-form">
 
@@ -13,10 +18,34 @@
   </div>
 
   <div class="form-group">
+    <label>Business Name: </label>
+    <input type="text" class="form-control" name="businessName">
+  </div>
+
+  <div class="form-group">
+    <label>License Number: </label>
+    <input type="text" class="form-control" name="license">
+  </div>
+
+  <div class="form-group">
+    <label>Employee Identification Number: </label>
+    <input type="text" class="form-control" name="ein">
+  </div>
+
+  <div class="form-group">
+    <label>Domain Name: </label>
+    <input type="text" class="form-control" name="domainName">
+  </div>
+
+  <div class="form-group">
     <label>Password: </label>
     <input type="password" class="form-control" name="password">
   </div>
 
-  <button type="submit" class="btn btn-primary">Create An Account</button>
+  <button type="submit" class="btn btn-primary">Create Account</button>
 
 </form>
+
+<div class="img">
+<img src="/images/startUpLogo3.ico" alt="startup">
+</div>
