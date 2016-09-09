@@ -4,8 +4,10 @@ const exphbs = require('express-handlebars');
 
 const Sequelize = require('sequelize');
 
-const app = express();
+const bodyParser = require('body-parser');
 
+const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Adds bcrypt so we can hash passwords
 const bcrypt = require('bcrypt-nodejs');
@@ -17,11 +19,19 @@ const session = require('express-session');
 // Setup database
 const sequelize = new Sequelize('startupUsers', 'root', 'astrophotos666');
 
-// Model for keeping track of user accounts.
-const User = sequelize.define('user', {
-  username: Sequelize.STRING,
-  password: Sequelize.STRING,
-  email: Sequelize.STRING
+// Create a new model for startup. Comprised of a logo, a name, a shit-ton of
+// social media links, and how to contact them
+const Startup = sequelize.define('startup', {
+  name: Sequelize.STRING,
+  logo: Sequelize.STRING,
+  facebook: Sequelize.STRING,
+  twitter: Sequelize.STRING,
+  instagram: Sequelize.STRING,
+  angellist: Sequelize.STRING,
+  checked: Sequelize.STRING,
+  email: Sequelize.STRING,
+  phone: Sequelize.STRING,
+  location: Sequelize.STRING
 });
 
 sequelize.sync();
@@ -96,6 +106,13 @@ app.get('/landing', function(req, res) {
       check: true,
       phone: "575-914-1826",
       email: "bjorkbat@gmail.com"
+    },
+    {
+      name: "Cultivating Coders",
+      logo: "/images/cclogo.png",
+      facebook: "https://www.facebook.com/cultivatingcoders",
+      twitter: "https://twitter.com/CultivatingCoders",
+      check: true
     }
   ];
 
@@ -103,6 +120,29 @@ app.get('/landing', function(req, res) {
     stylesheets: [{name: 'landing.css'}],
     startups: startups
   });
+});
+
+// Function renders a form for us to add a new startup
+app.get('/newstartup', function(req, res) {
+  res.render('newstartup', {stylesheets: [{name: 'newstartup.css'}]});
+});
+
+app.post('/newstartup', function(req, res) {
+
+  Startup.create({
+    name: req.body.name,
+    logo: req.body.logo,
+    email: req.body.email,
+    phone: req.body.phone,
+    location: req.body.location,
+    facebook: req.body.facebook,
+    twitter: req.body.twitter,
+    instagram: req.body.instagram,
+    angellist: req.body.angellist,
+  }).then(function() {
+    res.render('newstartupsuccess', {stylesheets: [{name: 'newstartup.css'}]});
+  });
+
 });
 
 // This function handles requests to the signup page
